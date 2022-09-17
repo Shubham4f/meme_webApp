@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+    min-width: 30vw;
+    padding: 10px 2rem;
+    margin: 10px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 1rem 1rem rgb(172, 167, 165);
+}
+
+.meme {
+    margin-bottom: 10px;
+}
+
+.meme_img {
+    height: 30vw;
+}
+
+.btn_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn a {
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    z-index: 2000;
+    text-decoration: none;
+}
+
+.btn {
+    height: 3rem;
+    margin: 20px;
+    cursor: pointer;
+    font-family: cursive;
+    padding: 4px 10px;
+    font-size: 1.5rem;
+    background-color: coral;
+    border-radius: 6px;
+    position: relative;
+    outline: none;
+    border: none;
+    transition: all 0.35s ease-in-out;
+}
+
+#nxt::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    border-radius: 6px;
+    background: rgb(121, 255, 80);
+    transition: all 0.35s ease;
+}
+
+#nxt:hover::after {
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
+#pre::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    content: "";
+    border-radius: 6px;
+    background: rgb(121, 255, 80);
+    transition: all 0.35s ease;
+}
+
+#pre:hover::after {
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
